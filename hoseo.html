@@ -7,22 +7,23 @@
             font-family: '맑은고딕';
         }
         li{
-            list-style-image:url(arrow.gif);
+            list-style-type:circle;
             line-height:1.7px;
+        }
+        h2{
+            color:blueviolet;
+            text-decoration: underline;
         }
         p{
            color:darkkhaki;
         }
-        #p1{
-            color:blueviolet;
-            text-decoration: underline;
-
-        }
+       
         span1{text-shadow: 2px 2px 10px yellow;
         color:mediumspringgreen;}
-        span2{font-weight: bold;
-        color:brown;}
-
+        .brown {
+            color:brown;
+            font-weight: bold;
+        }
 
     </style>
 </head>
@@ -33,16 +34,20 @@
 <p><span4>클래식기타</span4>의 아름다운 선율을 감상하고 <span4>마스터 클래스</span4>를 통해 기타 실력을 향상할 수 있는 좋은 기회입니다.</p>
 
 <ul>
-    <li><span2>일시</span2>: 2023년 07월 15일 ~ 08월 15일</li>
+    <li><span class='brown'>일시</span>: 2023년 07월 15일 ~ 08월 15일</li>
     <br>
-    <li><span2>장소</span2>: 호서대학교 대강당</li>
+    <li><span class='brown'>장소</span>: 호서대학교 대강당</li>
     <br>
-    <li><span2>주최</span2>: 호서대학교 디지털기술경영학과</li>
+    <li><span class='brown'>주최</span>: 호서대학교 디지털기술경영학과</li>
     <br>
-    <li><span2>사회</span2>: 20213100 이지연</li>
+    <li><span class='brown'>사회</span>: 20213100 이지연</li>
     <br>
-    <li><span4>문의사항</span4>: 
-        <a href="profile.html">이지연</a></li>
+    <li><span2>문의사항</span2>: 
+        <form action="submit.html">
+            <textarea width="20" height="20"></textarea>
+            <br>
+            <input type="submit" value="문의사항제출">
+            </form>
 </ul>
 <br>
 <span3>※다양한 객실이 준비되어 있어요. 예약을 원하시는 분은 전화주세요. 애완동물도 동반 가능합니다. 감사합니다. ❛ ᴗ ❛</span3>
