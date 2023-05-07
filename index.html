@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            function sub{
+                const name=('당신은 누구십니까:');
+                document.getElementById("test").innerHTML="안녕하시렵니까" +name;
+            }
+        </script>
         <style>
             table, th, td {
                 border: 2px solid black;
@@ -20,6 +26,8 @@
             </head>
             
         <body>
+        <button onclick="sub()">클릭</button>
+        <h2 id="test"></h2>
             <h3>환영합니다! 20213100 이지연의 홈페이지입니다.
                 <br>
                 <h3>1학기 시간표</h3>
