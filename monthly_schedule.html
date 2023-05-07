@@ -3,9 +3,22 @@
     <head>
         <meta charset='utf-8'>
         <style>
-            body {font-family: '맑은고딕';}
+            h2{
+                text-align: center;
+                color:hotpink;
+                text-shadow:5px 5px 3px gray;
+            }
+            body {
+                font-family: '맑은고딕';
+                background-color: rgb(223, 246, 255);
+                background-image: url("hoseo.png");
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: center;
+            }
         table{
              border-collapse: collapse;
+             margin: 20px 20px 20px 310px;
             }
         td{
             border: 1px solid gray;
@@ -22,11 +35,23 @@
         }
         td:nth-child(1), th:nth-child(1) {color:red;}
         /*nth-child 첫 글자색 지정, nth-last-child 동일한 서식 부여하면 td 마지막 요소*/
+        .web{
+            color:blue;
+        }
+        #volunteer{
+            color:rgb(27, 210, 27);
+        }
+        a:visited{
+            text-decoration: none; color:gold;
+        }
+        a:hover{
+            text-decoration: none; color:#FA58AC;
+        }
     </style>
     </head>
     <body>
     <table>
-        <caption>월간 일정표</caption>
+        <h2>월간 일정표</h2>
         <tr>
             <th>일(Sun)</th>
             <th>월(Mon)</th>
@@ -39,29 +64,29 @@
         </tr>
         <tr>
             <td></td>
-            <td style="color: rgb(221, 242, 251);">1 <br> [근로자의 날]</td>
+            <td>1 <br><a href="https://namu.wiki/w/%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EB%82%A0">근로자의 날</a> <br> <span id="volunteer">봉사활동</span></td>
             <td>2</td>
-            <td>3 <br> AI 면접특강</td>
+            <td>3 <br> AI 면접특강 <br> <span id="volunteer">봉사활동</span></td>
             <td>4</td>
-            <td>5 <br> [어린이날] <br> 웹프로그래밍</td>
+            <td style="color: red;">5 <br>어린이날<br><span class="web">웹프로그래밍</span></td>
             <td>6</td>
         </tr>
         <tr>
             <td>7</td>
-            <td>8 <br> [어버이날]</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12 <br> 웹프로그래밍</td>
+            <td>8 <br><a href="https://namu.wiki/w/%EC%96%B4%EB%B2%84%EC%9D%B4%EB%82%A0">어버이날</a> <br> <span id="volunteer">봉사활동</span></td>
+            <td>9 <br> <span id="volunteer">봉사활동</span></td>
+            <td>10 <br> <span id="volunteer">봉사활동</span></td>
+            <td>11 <br> <span id="volunteer">봉사활동</span></td>
+            <td>12 <br> <span class="web">웹프로그래밍</span></td>
             <td>13</td>
         </tr>
         <tr>
             <td>14</td>
-            <td>15 <br> [스승의 날]</td>
+            <td>15 <br><a href="https://namu.wiki/w/%EC%8A%A4%EC%8A%B9%EC%9D%98%20%EB%82%A0?from=%EC%8A%A4%EC%8A%B9%EC%9D%98%EB%82%A0">스승의 날</a></td>
             <td>16</td>
             <td>17</td>
-            <td>18</td>
-            <td>19 <br> 웹프로그래밍</td>
+            <td>18 <br> 교양 휴강</td>
+            <td>19 <br> <span class="web">웹프로그래밍</span> <br> 창업 캠프</td>
             <td>20</td>
         </tr>
         <tr>
@@ -70,12 +95,12 @@
             <td>23</td>
             <td>24</td>
             <td>25</td>
-            <td>26 <br> 웹프로그래밍</td>
-            <td>27 <br>[부처님오신날]</td>
+            <td>26 <br> <span class="web">웹프로그래밍</span></td>
+            <td style="color:red">27 <br>부처님오신날</td>
         </tr>
         <tr>
             <td>28</td>
-            <td>29</td>
+            <td style="color:red">29 <br> 대체공휴일</td>
             <td>30</td>
             <td>31</td>
             <td></td>
