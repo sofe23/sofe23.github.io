@@ -19,16 +19,27 @@
             </style>
             <script>
                 function func(){
-                    let name=prompt('당신은 누구십니까:');
-                    document.getElementById("test").innerHTML="안녕하시렵니까" +name;
+                    let name=prompt('Who are you?:');
+                    document.getElementById("test").innerHTML="Nice to see you" +name;
                 }
+            </script>
+            <script>
+                 function subgreen(){
+                e=document.getElementById('test')
+                e.style.color='green';
+            }
             </script>
             </head>
             
         <body>
-            <h3>환영합니다! 20213100 이지연의 홈페이지입니다.
-                <br>
-                <h3>1학기 시간표</h3>
+           <img onmouseout="this.style.width='100px'" onmouseover="this.style.witdh='200px'"
+           src="hoseo.png" width="100px">
+           <h3 id="test">환영합니다!</h3> 
+           <button onclick="subgreen();" type="button">change</button>
+           <br> 
+           <h2>20213100 이지연의 홈페이지입니다.</h2>
+           <br>
+           <h3>1학기 시간표</h3>
 
     <table style="width:50%">
         <caption>2023학년도 1학기 시간표</caption>
@@ -62,7 +73,8 @@
             <td></td>
             <td style="background: rgb(255, 255, 160);">경영통계-01(1호관(천안)209)</td>
             <td style="background: rgb(255, 255, 160);">인공지능과경영-02(1호관(천안)210)</td>
-            <td style="background: rgb(255, 255, 160);" rowspan="2"> <button onclick="func()">클릭</button>
+            <td style="background: rgb(255, 255, 160);" rowspan="2"> 
+                <button onclick="func()">클릭</button>
                 <h2 id="test"></h2>웹프로그래밍-01(1호관(천안)210)</td>
         </tr>
         <tr>
