@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset='utf-8'>
         <style>
-        table, th, td {
-            border: 2px solid black;
-            border-collapse: collapse;
-            text-align: center;
+            body {font-family: '맑은고딕';}
+        table{
+             border-collapse: collapse;
+            }
+        td{
+            border: 1px solid gray;
+            padding: 3px;
             width : 120px;
-            height: 20px;
+            height: 120px;
         }
-        
-        th, td{
-            padding: 10px;
-    }
         th{
-            text-align: center;
-    }
+            border: 1px solid gray;
+            height: 30px;
+            background-color: #ddd;
+            font-weight: bold;
+        }
+        td:nth-child(1), th:nth-child(1) {color:red;} 
+        td:nth-last-child(1), th:nth-last-child(1) {color:blue;}
+        /*nth-child 첫 글자색 지정, nth-last-child 동일한 서식 부여하면 td 마지막 요소*/
+        .first{
+            vertical-align: top;
+        }
     </style>
     </head>
     <body>
-    <table style="width:50%">
-        <caption id="color">2023학년도 1학기 시간표</caption>
-        <button onclick="subgreen();" type="button">change</button>
+    <table>
+        <caption>월간 일정표</caption>
         <tr>
             <th>일(Sun)</th>
             <th>월(Mon)</th>
@@ -33,122 +41,48 @@
 
         </tr>
         <tr>
-            <th>0교시<br>08:30~09:20</th>
-            <td style="background: rgb(221, 242, 251);">채플-05(교육관(대학교회(천안))103)(온라인)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th></th>
+            <td style="color: rgb(221, 242, 251);">1 <br> [근로자의 날]</td>
+            <td>2</td>
+            <td>3 <br> AI 면접특강</td>
+            <td>4</td>
+            <td>5 <br> [어린이날] <br> 웹프로그래밍</td>
+            <td>6</td>
         </tr>
         <tr>
-            <th>1교시<br>09:30~10:20</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th>7</th>
+            <td>8 <br> [어버이날]</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12 <br> 웹프로그래밍</td>
+            <td>13</td>
         </tr>
         <tr>
-            <th>2교시<br>10:30~11:20</th>
-            <td></td>
-            <td></td>
-            <td style="background: rgb(255, 255, 160);">경영통계-01(1호관(천안)209)</td>
-            <td style="background: rgb(255, 255, 160);">인공지능과경영-02(1호관(천안)210)</td>
-            <td style="background: rgb(255, 255, 160);" rowspan="2"> 
-                <button onclick="func()">클릭</button>
-                <p id="test">웹프로그래밍-01(1호관(천안)210)</p></td>
-            <td></td>
+            <th>14</th>
+            <td>15 <br> [스승의 날]</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19 <br> 웹프로그래밍</td>
+            <td>20</td>
         </tr>
         <tr>
-            <th>3교시<br>11:30~12:20</th>
-            <td></td>
-            <td style="background: rgb(255, 255, 160);" rowspan="2">인공지능과경영-02(1호관(천안)210)</td>
-            <td style="background: rgb(255, 255, 160);" rowspan="2">경영정보시스템-01(1호관(천안)210)</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th>21</th>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26 <br> 웹프로그래밍</td>
+            <td>27 <br>[부처님오신날]</td>
         </tr>
         <tr>
-            <th>4교시<br>12:30~13:20</th>
+            <th>28</th>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>5교시<br>13:30~14:20</th>
-            <td style="background: rgb(255, 255, 160);">경영정보시스템-01(1호관(천안)210)</td>
-            <td></td>
-            <td></td>
-            <td style="background: rgb(255, 255, 160);">마케팅의이해-01(1호관(천안)202)</td>
-            <td style="background: rgb(255, 255, 160);" rowspan="2">경영통계-01(1호관(천안)209)</td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>6교시<br>14:30~15:20</th>
-            <td style="background: rgb(255, 255, 160);" rowspan="2">마케팅의이해-01(1호관(천안)202)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr> 
-        <tr>
-            <th>7교시<br>15:30~16:20</th>
-            <td></td>
-            <td></td>
-            <td style="background: rgb(255, 210, 250);" rowspan="2">현대사회와패션문화(2)-07(벤처교육관(천안)307)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>8교시<br>16:30~17:20</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>9교시<br>17:30~18:20</th>
-            <td></td>
-            <td style="background: rgb(255, 210, 250);">사회봉사의이해-07(2호관(천안)502)(온라인)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>10교시<br>18:20~19:05</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>    
-            <th>11교시<br>19:10~19:55</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>12교시<br>20:00~20:45</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td style="background: rgb(255, 255, 160);">웹프로그래밍-01(1호관(천안)210)(온라인)</td>
             <td></td>
         </tr>
     </body>
