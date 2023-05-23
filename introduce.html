@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <style>
+        @font-face {
+            font-family: 'S-CoreDream-3Light';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+        }
+
+        body {
+            font-family: 'S-CoreDream-3Light';
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header,
+        nav,
+        section,
+        aside,
+        footer {
+            border: solid 0px red;
+        }
+
+        header {
+            margin-top: 10px;
+        }
+
+        nav {
+            width: 700px;
+            height: 100px;
+            margin-top: 50px;
+
+        }
+
+        section {
+            width: 674px;
+            height: 240px;
+            margin-top: 10px;
+            float: left;
+        }
+
+        aside {
+            width: 290px;
+            height: 240px;
+            margin-top: 10px;
+            float: left;
+        }
+
+        footer {
+            width: 995px;
+            border-top: solid 1px #cccccc;
+            height: 130px;
+
+        .clear {
+            clear: both
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: #3ADF00;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #DA81F5;
+        }
+
+        #logo,
+        #top {
+            border: solid 0px green;
+        }
+
+        #logo {
+            float: left;
+        }
+
+        #top {
+            float: right;
+            margin-top: 30px;
+            margin-right: 20px;
+        }
+
+        li {
+            float: left;
+            list-style-type: none;
+        }
+        #banner{
+            float: center;
+            margin-top: 50px;
+        }
+
+        #address {
+            float: left;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+
+        #customer {
+            float: left;
+            margin-top: 20px;
+            margin-left: 180px;
+        }
+
+        .button{
+        border: solid 2px yellow;
+        border-radius: 10px;
+        width: 125px;
+        height: 25px;
+        display: inline-block;
+        text-align: center;
+        background-color:white;
+        filter:drop-shadow(5px 5px 5px pink);
+    }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            width: 200px;
+            height: 100px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        th {
+            text-align: center;
+        }
+        .img1{ 
+            width:500px;
+            height:500px;
+        }
+
+    </style>
+    <script>
+        function subgreen() {
+            x = document.getElementById('color')
+            x.style.color = '#01DFA5';
+        }
+
+        function func() {
+            let name = prompt('Who are you?:');
+            document.getElementById("test").innerHTML = "Nice to see you" + name;
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id='logo'>
+            <img src='img/green0.png'>
+        </div>
+
+        <div id='top'>
+            <a href="index.html">시간표</a> | <a href="form_test.html"> 회원가입</a> | <a href="profile">프로필</a> | <a href="monthly_schedule.html">5월 일정표</a> |
+        </div>
+    </header>
+    <br>
+    <nav>
+        <div class='button'>
+            <a href="rubato.html">루바토팬션안내</a>
+        </div>
+        <div class='button'>
+            <a href="hoseo.html">호서기타페스티벌</a>
+        </div>
+        <div class='button'>
+            <a href="night.html">야간개장안내</a>
+        </div>
+        <div class='button'>   
+            <a href="sale.html">세일안내장</a>
+        </div>
+        <div class='button'>
+        <a href="shopingmall.html">쇼핑몰판매목록</a>
+        </div>
+        
+
+    </nav>
+    <section>
+        <table style="width:50%">
+            <caption id="color">2023학년도 1학기 시간표</caption>
+            <button onclick="subgreen();" type="button">change</button>
+            <tr>
+                <th><img onmouseout="this.style.width='100px'" onmouseover="this.style.width='200px'" src="hoseo.png" width="100px"></th>
+                <th>월(Mon)</th>
+                <th>화(Tue)</th>
+                <th>수(Wed)</th>
+                <th>목(Thu)</th>
+                <th>금(Fri)</th>
+            </tr>
+            <tr>
+                <th>0교시<br>08:30~09:20</th>
+                <td style="background: rgb(221, 242, 251);">채플-05(교육관(대학교회(천안))103)(온라인)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>1교시<br>09:30~10:20</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>2교시<br>10:30~11:20</th>
+                <td></td>
+                <td></td>
+                <td style="background: rgb(255, 255, 160);">경영통계-01(1호관(천안)209)</td>
+                <td style="background: rgb(255, 255, 160);">인공지능과경영-02(1호관(천안)210)</td>
+                <td style="background: rgb(255, 255, 160);" rowspan="2">
+                    <button onclick="func()">클릭</button>
+                    <p id="test">웹프로그래밍-01(1호관(천안)210)</p>
+                </td>
+            </tr>
+            <tr>
+                <th>3교시<br>11:30~12:20</th>
+                <td></td>
+                <td style="background: rgb(255, 255, 160);" rowspan="2">인공지능과경영-02(1호관(천안)210)</td>
+                <td style="background: rgb(255, 255, 160);" rowspan="2">경영정보시스템-01(1호관(천안)210)</td>
+            </tr>
+            <tr>
+                <th>4교시<br>12:30~13:20</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>5교시<br>13:30~14:20</th>
+                <td style="background: rgb(255, 255, 160);">경영정보시스템-01(1호관(천안)210)</td>
+                <td></td>
+                <td></td>
+                <td style="background: rgb(255, 255, 160);">마케팅의이해-01(1호관(천안)202)</td>
+                <td style="background: rgb(255, 255, 160);" rowspan="2">경영통계-01(1호관(천안)209)</td>
+            </tr>
+            <tr>
+                <th>6교시<br>14:30~15:20</th>
+                <td style="background: rgb(255, 255, 160);" rowspan="2">마케팅의이해-01(1호관(천안)202)</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>7교시<br>15:30~16:20</th>
+                <td></td>
+                <td></td>
+                <td style="background: rgb(255, 210, 250);" rowspan="2">현대사회와패션문화(2)-07(벤처교육관(천안)307)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>8교시<br>16:30~17:20</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>9교시<br>17:30~18:20</th>
+                <td></td>
+                <td style="background: rgb(255, 210, 250);">사회봉사의이해-07(2호관(천안)502)(온라인)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>10교시<br>18:20~19:05</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>11교시<br>19:10~19:55</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>12교시<br>20:00~20:45</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="background: rgb(255, 255, 160);">웹프로그래밍-01(1호관(천안)210)(온라인)</td>
+            </tr>
+        </table>
+    </section>
+        <div class="img1">
+            <img src="img/boom1.jpg">
+        </div>
+    <aside>
+        <ul>
+            <li>
+                <img src="img/success.png">
+            </li>
+        </ul>
+    </aside>
+    <footer>
+        <div id="address">
+            <p>20213100</p>
+        </div>
+        <div id="customer">
+            <p>이지연</p>
+        </div>
+    </footer>
+</body>
+
+</html>
