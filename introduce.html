@@ -11,6 +11,10 @@
 
         body {
             font-family: 'S-CoreDream-3Light';
+            background-image: url("img/boom.jpg"); 
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center;
         }
 
         * {
@@ -24,19 +28,16 @@
         }
 
         section {
-            width: 674px;
-            height: 240px;
-            margin-top: 10px;
+            margin: 10px;
             float: left;
         }
 
         aside {
             width: 290px;
-            height: 240px;
+            height: 100px;
             margin-top: 10px;
             margin-left: 29px;
-            border: solid 1px gray;
-            float: left;
+            float: right;
         }
 
         footer {
@@ -48,24 +49,20 @@
 
         #address {
             float: left;
-            margin-top: 30px;
+            margin-top: 60px;
             margin-left: 50px;
+            font-size: x-small;
         }
 
         #customer {
             float: left;
-            margin-top: 30px;
-            margin-left: 180px;
+            margin-top: 60px;
+            margin-left: 300px;
+            font-size: x-small;
         }
 
         .clear {
             clear: both;
-        }
-        .gnb {
-            background-image: url("img/green0.jpg"); 
-            background-size: cover;
-            width:100%;
-            height: 400px;
         }
 
         a:visited {
@@ -86,6 +83,7 @@
             float: right;
             margin-top: 30px;
             margin-right: 20px;
+            font-size: small;
         }
 
         li {
@@ -98,29 +96,29 @@
         .button{
         border: solid 2px yellow;
         border-radius: 10px;
-        width: 125px;
-        height: 25px;
-        display: inline-block;
+        width: 100px;
+        height: 20px;
         text-align: center;
+        font-size: small;
         background-color:white;
         filter:drop-shadow(5px 5px 5px pink);
+    }
+    .buttonbox{
+        width:800px;
+        padding: 10px;
+        margin-left: 100px;
+        justify-content: space-between;
+        display: inline-flex;
     }
         table,
         th,
         td {
-            border: 2px solid black;
+            border: 1px solid black; 
             border-collapse: collapse;
             text-align: center;
             width: 200px;
-        }
-
-        th,
-        td {
-            padding: 10px;
-        }
-
-        th {
             text-align: center;
+            font-size: small;
         }
 
     </style>
@@ -134,45 +132,46 @@
             let name = prompt('Who are you?:');
             document.getElementById("test").innerHTML = "Nice to see you" + name;
         }
-
     </script>
 </head>
 
 <body>
     <header>
         <div class='gnb'>
-        </div>
         <div id='top'>
-            <a href="form_test.html"> 회원가입</a> | <a href="profile">프로필</a> | <a href="monthly_schedule.html">5월 일정표</a> |
+            <a href="form_test.html"> 회원가입</a> | <a href="profile.html">프로필</a> | <a href="monthly_schedule.html">5월 일정표</a> |
+        </div>
+        <div class="buttonbox">
+            <div class='button'>
+                <a href="rubato.html">루바토팬션안내</a>
+            </div>
+            <div class='button '>
+                <a href="hoseo.html">호서기타페스티벌</a>
+            </div>
+            <div class='button'>
+                <a href="night.html">야간개장안내</a>
+            </div>
+            <div class='button'>   
+                <a href="sale.html">세일안내장</a>
+            </div>
+            <div class='button'>
+            <a href="shopingmall.html">쇼핑몰판매목록</a>
+            </div>
+            </div>
         </div>
    </header>
     <br>
     <nav>
-        <div class='button'>
-            <a href="rubato.html">루바토팬션안내</a>
-        </div>
-        <div class='button'>
-            <a href="hoseo.html">호서기타페스티벌</a>
-        </div>
-        <div class='button'>
-            <a href="night.html">야간개장안내</a>
-        </div>
-        <div class='button'>   
-            <a href="sale.html">세일안내장</a>
-        </div>
-        <div class='button'>
-        <a href="shopingmall.html">쇼핑몰판매목록</a>
-        </div>
-        
 
     </nav>
-    <div>
-    <section>
-        <table style="width:100%">
+    <div style="display: inline-flex;">
+    <section style="display: inline-block;">
+        <table style="width:100%;">
+        
             <caption id="color">2023학년도 1학기 시간표</caption>
             <button onclick="subgreen();" type="button">change</button>
             <tr>
-                <th><img onmouseout="this.style.width='100px'" onmouseover="this.style.width='200px'" src="hoseo.png" width="100px"></th>
+                <th><img onmouseout="this.style.width='50px'" onmouseover="this.style.width='100px'" src="hoseo.png" width="100px"></th>
                 <th>월(Mon)</th>
                 <th>화(Tue)</th>
                 <th>수(Wed)</th>
@@ -280,7 +279,7 @@
         </table>
     </section>
    
-    <aside>
+    <aside style="display: inline-block;">
         <ul>
             <li>
                 <img src="img/success.png" style="width: 200px;">
@@ -288,15 +287,16 @@
         </ul>
     </aside>
     </div>
+    <div class='clear'></div>
     <footer>
         <div id="address">
-            <p>20213100</p>
+            <p>주소: 충청남도 천안시 동남구 호서대길 12 
+                <br> TEL: 041-560-8114</p>
         </div>
         <div id="customer">
-            <p>이지연</p>
+            <p>© ji yeon lee. All Rights Reserved</p>
         </div>
     </footer>
-    <div class='clear'></div>
     
 </body>
 
