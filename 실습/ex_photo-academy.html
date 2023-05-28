@@ -6,12 +6,39 @@
 /*  기본틀 만들기 */
 
 * {padding: 0px; margin:0px;}
-header {background-color: red;}
-#main_img {background-color: blue;}
-#contents {background-color: green;}
-#sub_menu {background-color: pink;}
-#main_contents{background-color: orange;}
-footer {background-color: yellow;}
+header {
+      background-color: red;
+      height: 100px;
+      width: 1140px;
+      margin: 0 auto;
+}
+#main_img {
+      background-color: blue;
+      height: 250px;
+      width: 100%;
+}
+#contents {
+      background-color: green;
+      width: 1140px;
+      margin: 0 auto;
+}
+#sub_menu {
+      background-color: pink;
+      width: 234px;
+      float: left;
+      
+}
+#main_contents{
+      background-color: orange;
+      width: 880px;
+      float: right;
+}
+footer {
+      background-color: yellow;
+      width: 100%;
+      height: 150px;
+}
+.clear{clear:both;}
  
 </style>
 </head>
@@ -19,7 +46,9 @@ footer {background-color: yellow;}
 <body>
 
 <header>
-상단헤더
+<nav id='menus'>
+      상단헤더
+</nav>
 </header>
 
 <section id='main_img'>
@@ -35,10 +64,11 @@ footer {background-color: yellow;}
             메인콘텐츠
       </div>
 </section>
-
+<div class="clear"></div>
 <footer>
 하단푸터
 </footer>
+
 </body>
 
 </html>
